@@ -1,7 +1,10 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,7 +14,7 @@ body {
 .hero-header {
     position: relative;
     background: url('images/site_background.jpg') no-repeat center center/cover;
-    height: 350px;
+    height: 400px;
     text-align: center;
     color: white;
     display: flex;
@@ -31,19 +34,27 @@ body {
     padding: 20px;
 }
 
+/* Profile Picture */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 3px solid white;
-    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 /* Navigation Bar */
 .navbar {
     background: #002147;
     text-align: center;
-    padding: 10px;
+    padding: 14px;
 }
 
 .navbar ul {
@@ -63,10 +74,36 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
     text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* Welcome Section */
+.intro {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Project */
+.featured-project {
+    background: #ffffff;
+    padding: 40px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-project h2 {
+    color: #002147;
 }
 
 /* Buttons */
@@ -86,7 +123,7 @@ body {
     background: #004080;
 }
 
-/* Featured Project Image */
+/* Project Image */
 .project-image-container img {
     width: 100%;
     max-width: 600px;
