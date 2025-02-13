@@ -1,69 +1,83 @@
-/* Global Styles */
+/* styles.css (Global Styles) */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #004b87;
-    color: white;
-    padding: 20px;
+/* Header Styles */
+.hero-header {
+    position: relative;
+    background: url('images/site-background.jpg') no-repeat center center/cover;
+    height: 300px;
     text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Navigation */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #003366;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-}
-
-h1, h2, h3 {
-    color: #004b87;
-}
-
-.btn {
-    background-color: #004b87;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 10px;
+    display: block;
 }
 
-.btn:hover {
-    background-color: #003366;
+/* Project Image Styles */
+.project-image-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
 }
 
-.projects .project {
-    background-color: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project img {
+.project-image-container img {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
+.project-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
-    background-color: #004b87;
-    color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    background: #003366;
+    color: white;
 }
