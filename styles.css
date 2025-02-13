@@ -1,72 +1,80 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #002147;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #003366;
+    color: #333;
     margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 10px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-nav ul li a {
-    color: white;
+/* Navigation */
+nav {
+    background: #002147;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+/* Header */
+.header {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+/* Home Page */
+.welcome {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #002147;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
     background: #002147;
-    color: white;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
-footer {
-    text-align: center;
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Projects Page */
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Page */
+.contact-info {
+    background: white;
     padding: 20px;
-    background-color: #003366;
-    color: white;
-    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
