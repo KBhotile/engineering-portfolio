@@ -1,4 +1,5 @@
-/* General Styles */
+/* Updated styles.css without images */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -7,74 +8,55 @@ body {
     padding: 0;
 }
 
+header {
+    text-align: center;
+    background-color: #002147;
+    color: white;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #002147;
+}
+
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-}
-
-/* Navigation */
-nav {
-    background: #002147;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-/* Header */
-.header {
-    background: url('images/banner.jpg') no-repeat center center/cover;
-    height: 300px;
-    text-align: center;
-    color: #fff;
-    padding-top: 80px;
-}
-
-.header h1 {
-    font-size: 32px;
-}
-
-/* Home Page */
-.welcome {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
-}
-
-.btn {
-    display: inline-block;
-    background: #002147;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Projects Page */
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Page */
-.contact-info {
     background: white;
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #002147;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }
